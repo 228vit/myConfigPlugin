@@ -26,6 +26,9 @@ class ProjectConfiguration extends sfProjectConfiguration
 Please note, if setting does not exists, new one will be created with default value. 
 
 * Manage settings in admin
+  
+  Enable admin module in setting.yml
+
   $ symfony doctrine:generate-admin backend Config
   backend.php/config
 
