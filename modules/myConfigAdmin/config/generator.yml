@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Config
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          config
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title:              Settings list
+        display:            [=name, value, description]
+      filter:  ~
+      form:    ~
+      edit:
+        title:              Edit <em>"%%name%%"</em> setting
+      new:
+        title:              Append setting

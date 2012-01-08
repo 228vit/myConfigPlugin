@@ -1,0 +1,11 @@
+options:
+  charset:  utf8
+  collate:  utf8_unicode_ci
+
+Config:
+  tableName: config
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    name:           { type: string(255) }
+    value:          { type: string(255) }
+    description:    { type: string(1024) }
