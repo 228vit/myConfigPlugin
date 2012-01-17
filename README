@@ -2,7 +2,9 @@ Yet another alternative setting plugin
 
 * Installation
 
-$ git submodule add ...
+$ git submodule add git://github.com/228vit/myConfigPlugin.git plugins/myConfigPlugin
+$ git submodule init
+$ git submodule update
 $ symfony doctrine:generate-migrations-diff
 $ symfony doctrine:generate-migrate
 
