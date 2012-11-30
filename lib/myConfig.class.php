@@ -30,4 +30,36 @@ class myConfig extends sfConfig
     return (isSet(self::$config[$name]) ? self::$config[$name] : $default);
   }
 
+  /**
+   * Saves a config parameter to DB
+   *
+   * @param string $name    A config parameter name
+   * @param mixed  $default A default config parameter value
+   *
+   * @return string (updated|created)
+   */
+  public static function set($name, $default = null, $description = null)
+  {
+      $c = Doctrine::getTable('Config')->findOneByName($name);
+      if (!$c)
+      {
+        $c = new Config();
+        $c->setName($name);
+        $c->setValue($default);
+        $c->setDescription($description);
+        $c->save();
+        return 'created';
+      }
+      else
+      {
+        $c->setName($name);
+        $c->setValue($default);
+        $c->setDescription($description);
+        $c->save();
+        return 'updated';
+      }
+
+  }
+
 }
+
