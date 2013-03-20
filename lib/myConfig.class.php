@@ -16,7 +16,10 @@ class myConfig extends sfConfig
   {
     if (!sfConfig::get($name))
     {
-      $res = Doctrine::getTable('Config')->findOneByName($name);
+      $res = Doctrine_Query::create()
+              ->from('Config c')
+              ->where('c.name = ?', $name)
+              ->fetchOne();
       if (!$res)
       {
         $c = new Config();
