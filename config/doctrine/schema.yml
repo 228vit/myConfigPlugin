@@ -3,6 +3,7 @@
 #  collate:  utf8_unicode_ci
 
 Config:
+  connection: doctrine
   tableName: my_config
   columns:
     id:             { type: integer(4), primary: true, autoincrement: true }
