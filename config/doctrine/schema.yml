@@ -4,7 +4,7 @@
 
 Config:
   connection: doctrine
-  tableName: my_config
+  tableName:  config
   columns:
     id:             { type: integer(4), primary: true, autoincrement: true }
     name:           { type: string(255) }
