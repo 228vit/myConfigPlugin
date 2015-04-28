@@ -1,6 +1,6 @@
-#options:
-#  charset:  utf8
-#  collate:  utf8_unicode_ci
+options:
+  charset:  utf8
+  collate:  utf8_unicode_ci
 
 Config:
   connection: doctrine

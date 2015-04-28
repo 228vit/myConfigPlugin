@@ -4,7 +4,7 @@ class myConfigFilter extends sfFilter
   public function execute ($filterChain)
   {
     // Code to execute before the action execution
-    $configs = Doctrine::getTable('Config')->findAll();
+    $configs = Doctrine_Core::getTable('Config')->findAll();
     foreach ($configs as $config)
     {
       sfConfig::set($config->getName(), $config->getValue());

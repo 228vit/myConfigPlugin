@@ -1,0 +1,7 @@
+{
+    "name": "228vit/my_config_plugin",
+    "description": "Symfony 1.4+ plugin. Make all settings editable from backend",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
