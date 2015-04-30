@@ -1,7 +1,17 @@
 {
     "name": "228vit/my_config_plugin",
+    "type": "symfony1-plugin",
     "description": "Symfony 1.4+ plugin. Make all settings editable from backend",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaly Alyokhin",
+            "email": "228vit@gmail.com",
+            "role": "Creator"
+        }
+    ],
     "require": {
-        "php": ">=5.3.0"
+        "composer/installers": "~1.0"
     }
+
 }
