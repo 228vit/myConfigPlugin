@@ -1,5 +1,5 @@
 {
-    "name": "228vit/my_config_plugin",
+    "name": "228vit/my-config-plugin",
     "type": "symfony1-plugin",
     "description": "Symfony 1.4+ plugin. Make all settings editable from backend",
     "license": "MIT",
